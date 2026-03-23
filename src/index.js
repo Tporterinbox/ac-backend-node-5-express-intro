@@ -86,7 +86,7 @@ app.get("/say-hello/:name/:language", (req, res) => {
     } else if (language === "Turkish") {
       greeting = `Merhaba, ${name}!`;
     } else {
-      greeting = "Language not supported.";
+      greeting = "Language not listed.";
     }
   
     res.send(greeting);
